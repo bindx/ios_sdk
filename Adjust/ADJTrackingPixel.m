@@ -91,7 +91,7 @@ static const int kTrackingPixelTimeout[]    = { 10, 100 };
     NSURL *url = [NSURL URLWithString:urlString];
 
     dispatch_async(dispatch_get_main_queue(), ^(void){
-        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
         safariViewController.delegate = self;
 
         window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
